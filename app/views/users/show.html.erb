@@ -1,0 +1,19 @@
+
+<h2>I'm in the show action</h2>
+
+
+<a href="/users">Go back to the home page</a>
+
+<p>id: <%= @user.id %></p>
+<p>name: <%= @user.name %></p>
+<p>email: <%= @user.email %></p>
+
+
+<!--
+<form action="/users/<%= @user.id %>" method="post">
+  <input type="hidden" name="_method" value="delete">
+  <input type="submit" value="Delete user">
+</form> -->
+
+
+<a href="/users/<%= @user.id %>" data-method="delete" rel="nofollow">Delete the item</a>

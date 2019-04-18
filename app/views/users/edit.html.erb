@@ -1,0 +1,10 @@
+<h2>This is the edit page</h2>
+
+<form action="/users/<%= @user.id %>" method="post">
+  <input type="hidden" name="_method" value="patch">
+  name: <input type="text" name="name" value="<%= @user.name %>">
+  email: <input type="text" name="email" value="<%= @user.email %>">
+  password: <input type="text" name="password" value="<%= @user.password %>">
+  password_confirmation: <input type="text" name="password_confirmation" value="<%= @user.password_confirmation %>">
+  <input type="submit" value="update the user">
+</form>
